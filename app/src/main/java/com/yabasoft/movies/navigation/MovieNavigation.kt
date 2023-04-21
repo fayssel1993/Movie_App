@@ -35,7 +35,7 @@ fun MovieNavigation() {
                 type = NavType.StringType
             })
         ) { backStackEntry ->
-            MovieDetails(navHostController = navController, args = backStackEntry.arguments?.getString("movie"))
+            MovieDetails(navHostController = navController, movie = backStackEntry.arguments?.getString("movie"))
         }
     }
 }
